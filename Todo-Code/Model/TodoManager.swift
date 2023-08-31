@@ -25,7 +25,6 @@ class TodoManager {
         UserDefaults.standard.set(data, forKey: "todos")
     }
 
-    // UserDefaults에서 데이터를 불러오는 메서드
     func loadTodosFromUserDefaults() {
         if let data = UserDefaults.standard.data(forKey: "todos"),
            let savedTodos = try? JSONDecoder().decode([Todo].self, from: data)
@@ -33,6 +32,7 @@ class TodoManager {
             todos = savedTodos
         }
     }
+
     func saveDayTodosToUserDefaults() {
         let data = try? JSONEncoder().encode(daytodos)
         UserDefaults.standard.set(data, forKey: "daytodos")
