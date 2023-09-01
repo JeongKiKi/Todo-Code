@@ -13,6 +13,9 @@
 
 ![스크린샷 2023-09-01 오전 8 56 10](https://github.com/JeongKiKi/Todo-Code/assets/125369115/59d7d16e-b4a2-4d63-90cf-c2dfd864e4fc)
 
+
+## 스위치를 통해 완료표시하기
+
 ![스크린샷 2023-09-01 오전 8 56 24](https://github.com/JeongKiKi/Todo-Code/assets/125369115/15de14e1-9df1-41f5-a716-bb2a41c74ff3)
 
 ![스크린샷 2023-09-01 오전 8 56 31](https://github.com/JeongKiKi/Todo-Code/assets/125369115/1f01e1ab-d0a9-4f8c-a64e-9114ba293d27)
