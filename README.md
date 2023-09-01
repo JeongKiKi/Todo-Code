@@ -1,6 +1,8 @@
 # Todo-Code
 
 ## MVC패턴
+* Model, View, Controller 파일을 나누어서 코드를 작성해 보았지만 View와 Controller를 완벽하게 구분하지 못한것같다. 
+
 ![스크린샷 2023-09-01 오전 11 31 25](https://github.com/JeongKiKi/Todo-Code/assets/125369115/9268b607-ab1c-476f-bacf-efb7e4bc2839)
 
 
