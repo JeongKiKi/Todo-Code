@@ -1,6 +1,6 @@
 # Todo-Code
 
-##메인화면
+## 메인화면
 
 ![스크린샷 2023-09-01 오전 8 54 48](https://github.com/JeongKiKi/Todo-Code/assets/125369115/1f9a2e80-98ec-445e-9478-2267e79a621b)
 
