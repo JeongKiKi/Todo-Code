@@ -23,11 +23,13 @@
 
 ![스크린샷 2023-09-01 오전 8 56 31](https://github.com/JeongKiKi/Todo-Code/assets/125369115/1f01e1ab-d0a9-4f8c-a64e-9114ba293d27)
 
+
+## 완료한 Todo 확인하기
+
 ![스크린샷 2023-09-01 오전 8 56 39](https://github.com/JeongKiKi/Todo-Code/assets/125369115/4f54975a-7a44-4a1e-952a-88eef6b95dae)
 
 
-
-
+## 앱 실행 영상
 
 https://github.com/JeongKiKi/Todo-Code/assets/125369115/0c6a829b-ea85-42ca-88bc-7257af0a15c6
 
