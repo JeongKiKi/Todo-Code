@@ -44,41 +44,22 @@ class MainViewController: UIViewController {
         
         return btn
     }()
-    
+
+    lazy var profileDesign: UIButton = {
+        let btn = UIButton()
+        btn.setTitle("ProfileDesignViewController", for: .normal)
+        btn.setTitleColor(.black, for: .normal)
+        btn.backgroundColor = .yellow
+        view.addSubview(btn)
+        btn.addTarget(self, action: #selector(profileDesignBtn), for: .touchUpInside)
+        
+        return btn
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         makeUI()
         loadImageFromURL()
-    }
-    
-    // MARK: - 메인회면의 오토레이아웃
-
-    func makeUI() {
-        mainImage.translatesAutoresizingMaskIntoConstraints = false
-        todoAll.translatesAutoresizingMaskIntoConstraints = false
-        todoComplete.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .white
-        
-        NSLayoutConstraint.activate([
-            // 메인 화면 이미지 오토레이아웃
-            mainImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100),
-            mainImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
-            mainImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100),
-            mainImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            mainImage.heightAnchor.constraint(equalToConstant: 200),
-            // 메인 화면 모든Todo항목버튼 오토레이아웃
-            todoAll.topAnchor.constraint(equalTo: mainImage.bottomAnchor, constant: 30),
-            todoAll.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
-            todoAll.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100),
-            todoAll.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            todoAll.heightAnchor.constraint(equalToConstant: 30),
-            // 메인 화면 완료버튼 오토레이아웃
-            todoComplete.topAnchor.constraint(equalTo: todoAll.bottomAnchor, constant: 30),
-            todoComplete.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
-            todoComplete.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100),
-            todoComplete.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            todoComplete.heightAnchor.constraint(equalToConstant: 30)
-        ])
     }
     
     func loadImageFromURL() {
@@ -111,5 +92,49 @@ class MainViewController: UIViewController {
         print("pressdComplete")
         let completeVC = CompleteTodoViewController()
         navigationController?.pushViewController(completeVC, animated: false)
+    }
+
+    @objc func profileDesignBtn() {
+        print("pressdComplete")
+        let profileVC = ProfileDesignViewController()
+        profileVC.modalPresentationStyle = .fullScreen
+        present(profileVC, animated: true)
+    }
+}
+
+extension MainViewController {
+    func makeUI() {
+        mainImage.translatesAutoresizingMaskIntoConstraints = false
+        todoAll.translatesAutoresizingMaskIntoConstraints = false
+        todoComplete.translatesAutoresizingMaskIntoConstraints = false
+        profileDesign.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .white
+        
+        NSLayoutConstraint.activate([
+            // 메인 화면 이미지 오토레이아웃
+            mainImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100),
+            mainImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
+            mainImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100),
+            mainImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            mainImage.heightAnchor.constraint(equalToConstant: 200),
+            // 메인 화면 모든Todo항목버튼 오토레이아웃
+            todoAll.topAnchor.constraint(equalTo: mainImage.bottomAnchor, constant: 30),
+            todoAll.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
+            todoAll.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100),
+            todoAll.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            todoAll.heightAnchor.constraint(equalToConstant: 30),
+            // 메인 화면 완료버튼 오토레이아웃
+            todoComplete.topAnchor.constraint(equalTo: todoAll.bottomAnchor, constant: 30),
+            todoComplete.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
+            todoComplete.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100),
+            todoComplete.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            todoComplete.heightAnchor.constraint(equalToConstant: 30),
+            
+            profileDesign.topAnchor.constraint(equalTo: todoComplete.bottomAnchor, constant: 30),
+            profileDesign.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100),
+            profileDesign.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100),
+            profileDesign.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            profileDesign.heightAnchor.constraint(equalToConstant: 30),
+        ])
     }
 }
