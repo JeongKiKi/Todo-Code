@@ -39,43 +39,6 @@ class TodoAllViewController: UIViewController {
     @objc func rightButtonPress() {
         let todoAllVC = NewTodoAddViewController()
         navigationController?.pushViewController(todoAllVC, animated: false)
-//        let alert = UIAlertController(title: "Todo", message: "오늘할일", preferredStyle: .alert)
-//        alert.preferredContentSize = CGSize(width: 300, height: 1000)
-//
-//        let segueController = UISegmentedControl(items: ["s", "qq"])
-//
-//        segueController.translatesAutoresizingMaskIntoConstraints = false
-//        NSLayoutConstraint.activate([
-//            segueController.leadingAnchor.constraint(equalTo: alert.view.leadingAnchor, constant: 16),
-//            segueController.trailingAnchor.constraint(equalTo: alert.view.trailingAnchor, constant: -16),
-//            segueController.centerXAnchor.constraint(equalTo: alert.view.centerXAnchor),
-//            segueController.heightAnchor.constraint(equalToConstant: 40),
-//            segueController.topAnchor.constraint(equalTo: alert.view.bottomAnchor, constant: -30),
-//            //            segueController.topAnchor.constraint(equalTo: alert.textFields?.first?.bottomAnchor ?? alert.view.topAnchor, constant: 8),
-//        ])
-//        let ok = UIAlertAction(title: "저장", style: .destructive) {
-//            _ in
-//            if alert.textFields?.first?.text != "" {
-//                if let inputText = alert.textFields?.first?.text {
-//                    let newTodo = Todo(title: inputText, isComplete: false)
-//                    TodoManager.shared.daytodos.append(newTodo)
-//                    TodoManager.shared.saveDayTodosToUserDefaults()
-//                    self.tableView.reloadData()
-//                }
-//            } else { return }
-//        }
-//        let cancle = UIAlertAction(title: "취소", style: .cancel) {
-//            _ in
-//        }
-//
-//        // 세그먼트 컨트롤의 오토레이아웃 설정
-//
-//        alert.view.addSubview(segueController)
-//        alert.addAction(ok)
-//        alert.addAction(cancle)
-//
-//        alert.addTextField()
-//        present(alert, animated: true, completion: nil)
     }
 
     func makeUI() {

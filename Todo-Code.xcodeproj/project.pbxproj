@@ -20,6 +20,10 @@
 		68764F332A99F8D100225A70 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68764F322A99F8D100225A70 /* Todo.swift */; };
 		68764F352A99F8EB00225A70 /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68764F342A99F8EB00225A70 /* TodoManager.swift */; };
 		68764F372A9EECE000225A70 /* NewTodoAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68764F362A9EECE000225A70 /* NewTodoAddViewController.swift */; };
+		689BC5942AB17EE7005BA3A2 /* ProfileDesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689BC5932AB17EE7005BA3A2 /* ProfileDesignViewController.swift */; };
+		689BC5BA2AB2A8B1005BA3A2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 689BC5B92AB2A8B1005BA3A2 /* SnapKit */; };
+		689BC5BC2AB83443005BA3A2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689BC5BB2AB83443005BA3A2 /* CollectionViewCell.swift */; };
+		689BC5BE2AB87E41005BA3A2 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689BC5BD2AB87E41005BA3A2 /* MyPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,9 @@
 		68764F322A99F8D100225A70 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		68764F342A99F8EB00225A70 /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
 		68764F362A9EECE000225A70 /* NewTodoAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoAddViewController.swift; sourceTree = "<group>"; };
+		689BC5932AB17EE7005BA3A2 /* ProfileDesignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDesignViewController.swift; sourceTree = "<group>"; };
+		689BC5BB2AB83443005BA3A2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		689BC5BD2AB87E41005BA3A2 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				689BC5BA2AB2A8B1005BA3A2 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +105,7 @@
 			children = (
 				68764F2B2A99F72600225A70 /* TodoAllTableViewCell.swift */,
 				68764F2D2A99F81300225A70 /* CompleteTableViewCell.swift */,
+				689BC5BB2AB83443005BA3A2 /* CollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +117,8 @@
 				68764F252A99CFD100225A70 /* TodoAllViewController.swift */,
 				68764F362A9EECE000225A70 /* NewTodoAddViewController.swift */,
 				68764F272A99E61A00225A70 /* CompleteTodoViewController.swift */,
+				689BC5932AB17EE7005BA3A2 /* ProfileDesignViewController.swift */,
+				689BC5BD2AB87E41005BA3A2 /* MyPageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +139,9 @@
 			dependencies = (
 			);
 			name = "Todo-Code";
+			packageProductDependencies = (
+				689BC5B92AB2A8B1005BA3A2 /* SnapKit */,
+			);
 			productName = "Todo-Code";
 			productReference = 68764F0E2A99C28700225A70 /* Todo-Code.app */;
 			productType = "com.apple.product-type.application";
@@ -156,6 +170,9 @@
 				Base,
 			);
 			mainGroup = 68764F052A99C28700225A70;
+			packageReferences = (
+				689BC5B82AB2A8B1005BA3A2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 68764F0F2A99C28700225A70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -184,10 +201,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				68764F262A99CFD100225A70 /* TodoAllViewController.swift in Sources */,
+				689BC5942AB17EE7005BA3A2 /* ProfileDesignViewController.swift in Sources */,
+				689BC5BC2AB83443005BA3A2 /* CollectionViewCell.swift in Sources */,
 				68764F162A99C28700225A70 /* MainViewController.swift in Sources */,
 				68764F122A99C28700225A70 /* AppDelegate.swift in Sources */,
 				68764F142A99C28700225A70 /* SceneDelegate.swift in Sources */,
 				68764F282A99E61A00225A70 /* CompleteTodoViewController.swift in Sources */,
+				689BC5BE2AB87E41005BA3A2 /* MyPageViewController.swift in Sources */,
 				68764F372A9EECE000225A70 /* NewTodoAddViewController.swift in Sources */,
 				68764F332A99F8D100225A70 /* Todo.swift in Sources */,
 				68764F2C2A99F72600225A70 /* TodoAllTableViewCell.swift in Sources */,
@@ -412,6 +432,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		689BC5B82AB2A8B1005BA3A2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		689BC5B92AB2A8B1005BA3A2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 689BC5B82AB2A8B1005BA3A2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 68764F062A99C28700225A70 /* Project object */;
 }
